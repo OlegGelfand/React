@@ -1,22 +1,33 @@
 # Project Overview
 Oleg Gelfand
 ## Project Links
-
-- [add your github repo link]()
-- [add your deployment link]()
+github link
+https://github.com/OlegGelfand/React
+live link
+https://oleggelfand.github.io/React/
 
 ## Project Description
 
-I want to build another profile page and by mimicing teslas page. my API will hopefully pull in photos of cities based on users location. I will have an about me that can be referenced from the nav, 
-my resume will be on another page, links will exist to my github, linked in, and portfolio page.
+I want to build another profile page and by mimicing teslas page. my API will hopefully pull in photos of cities based on users location. I will have sections- skills, links, and projectabout me that can be referenced from the nav, 
+my resume will be on another page, links will exist to my github, linked in, and portfolio page from project 1.
+
+my skills section will link to the project section below, once a link is clicked only relevant projects show up. My API will be in the skills section- give the viewer a warm feel when they see a photo of their own city.
+
+the about me will have a photo of each of the people in my family, each clickable
 
 ## API
 
 Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
 
+my API will show a picture of the city of the user.
 
 ```
-{data: {} }
+const makeApiCall = async () => {
+  const res = await fetch("https://api.teleport.org/api/");
+  const json = await res.json();
+  console.log(json);
+};
+makeApiCall();
 ```
 
 
@@ -33,14 +44,20 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP EXAMPLE
-- Find and use external api 
+- Use external api 
+- connect components
 - Render data on page 
 - Allow user to interact with the page
+- add hamburger menu
+- create responsive design
+- add contact page
+- add nav bar
+- add links
+- add rotating images
 
 #### PostMVP EXAMPLE
 
-- Add localStorage or firebase for storage
-
+- really want my contact form to be unique kind of like the spinning saw blade on dewalt.com, with a potential construction background
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
@@ -57,9 +74,18 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Create Components Form | H | 4hrs| 0hrs | 0hrs |
+| Render Components | H | 4hrs| 0hrs | 0hrs |
+| Add API | H | 3hrs| 0hrs | 0hrs |
+| Add rotating images | H | 4hrs| 0hrs | 0hrs |
+| Add hamburger menu | H | 4hrs| 0hrs | 0hrs |
+| Responsive design | H | 4hrs| 0hrs | 0hrs |
+| Nav Bar | H | 3hrs| 0hrs | 0hrs |
+| link resume, github, linkedin, and project 1 portfolio | H | 2hrs| 0hrs | 0hrs |
+| Adding contact page | H | 3hrs| 0hrs | 0hrs |
+| Buffer time | H | 9hrs| 0hrs | 0hrs |
+| Total | H | 40hrs| 0hrs | 0hrs |
+
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
