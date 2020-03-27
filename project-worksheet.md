@@ -35,9 +35,7 @@ makeApiCall();
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
-both wireframe and react arch:
+Link to both wireframe and react arch:
 https://res.cloudinary.com/dkng1fqtz/image/upload/v1585305015/IMG_3041_rv6rin.jpg
 
 ### MVP/PostMVP - 5min
@@ -66,10 +64,12 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
-
+| App | This will make the initial data pull and include React Router, route to everywhere but the footer | 
+| Header | This will render the header include the nav, will have a hamburger icon when mobile. This will be Home (Router| 
+| Footer | This will just have a nice quote and a route back to the Header ,No route| 
+| About Me | This will include a nav bar in the bottom middle with 5 dots, scroll on click to the right or left, will show photos of my family that would show about me data once clicked | 
+| Skills | This will render all of my skills which will be linked to my projects section, in desktop this will surround a photo of me, in mobile the photo will be much smaller  | 
+| Projects | This will show only projects based on the skill that was clicked in Skills and will have a button to send back to skills to look at additional skills, ideally each project will show project data once clicked | 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
