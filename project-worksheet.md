@@ -37,7 +37,8 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 - [add link to your wireframes]()
 - [add link to your react architecture]()
-
+both wireframe and react arch:
+https://res.cloudinary.com/dkng1fqtz/image/upload/v1585305015/IMG_3041_rv6rin.jpg
 
 ### MVP/PostMVP - 5min
 
