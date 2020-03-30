@@ -1,13 +1,16 @@
 import React from 'react';
 import './Header.css';
+import Nav from '../Nav/Nav';
 
 
-function Header() {
+function Header(props) {
     return (
-      <p className="header">
+        <div>
+    <p className="header">
             Tesla
             </p>
-      
+        <Nav/>
+     </div>
     );
   }
 

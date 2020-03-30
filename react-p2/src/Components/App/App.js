@@ -34,6 +34,7 @@ function App(props) {
       <Form handleSubmit={handleSubmit} />
       <WeatherInfo zipcode={zipCodeData} />
       <MainPage />
+
       <Footer />
     </div>
     
