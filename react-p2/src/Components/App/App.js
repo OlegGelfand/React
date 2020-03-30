@@ -5,6 +5,11 @@ import WeatherInfo from "../WeatherInfo/WeatherInfo";
 import Form from "../Form/Form";
 import MainPage from "../MainPage/MainPage";
 import Header from '../Header/Header';
+import Modelx from '../Modelx/Modelx';
+import Modely from '../Modely/Modely';
+import { Route, Switch } from "react-router-dom";
+
+
 
 function App(props) {
      const [zipCodeData, setZipCodeData] = useState({});
@@ -29,15 +34,18 @@ function App(props) {
 
   return (
     <div className="App">
-    
       <Header />
       <Form handleSubmit={handleSubmit} />
       <WeatherInfo zipcode={zipCodeData} />
-      <MainPage />
-
-      <Footer />
-    </div>
-    
+     
+      {/* <Footer /> */}
+     <Switch>
+        <Route exact={true} path="/" component={MainPage} />
+        <Route exact path="/modelx" component={Modelx} />
+        <Route exact path="/modely" component={Modely} />
+      </Switch>
+  
+   </div>
   );
 }
 

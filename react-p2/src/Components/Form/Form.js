@@ -17,7 +17,6 @@ function Form(props) {
       <form onSubmit={handleSubmit}>
         <input id="ZipCode" type="text" value={zipCode} onChange={handleChange} />
         <input type="submit" value="Find local Weather" />
-        
       </form>
       </div>
     );

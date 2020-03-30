@@ -4,32 +4,6 @@ Form {
 }
 
 
-/* .tesla {
-  height:80px;
-  width:150px;
-} */
-
-h2 {
-  margin-left:20px;
-}
-
-
-
-
-.App {
-  text-align: center;
- 
-}
-.source {
-  margin-top: -20px;
-  height:auto;
-  width: auto;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

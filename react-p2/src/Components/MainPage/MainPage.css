@@ -4,13 +4,21 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap:0;
     width:100%;
+    height: 100px;
     transition: transform .2s; 
-    scroll-snap-points-y: repeat(300px);
+    /* scroll-snap-points-y: repeat(300px);
+    position:fixed; */
   }
-  .zoom>img{
+  /* .zoom>img{
     transition: transform .2s; 
     width:100%;
   }
   .zoom>img:hover {
     transform: scale(1.2); 
-  }
+  } */
+
+  
+
+
+
+ 

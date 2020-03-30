@@ -67,9 +67,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create Components Form | H | 4hrs| 0hrs | 0hrs |
-| Render Components | H | 4hrs| 0hrs | 0hrs |
-| Add API | H | 3hrs| 0hrs | 0hrs |
+| Create Components Form | H | 4hrs| 4hrs | 4hrs |
+| Render Components | H | 4hrs| 2hrs | 4hrs |
+| Add API | H | 3hrs| 1hrs | 0hrs |
 | Responsive design | H | 4hrs| 0hrs | 0hrs |
 | Nav Bar in header | H | 3hrs| 0hrs | 0hrs |
 | Nav Bar in footer | H | 3hrs| 0hrs | 0hrs |
@@ -77,7 +77,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Add grid | H | 4hrs| 0hrs | 0hrs |
 | Add styling | H | 4hrs| 0hrs | 0hrs |
 | Buffer time | H | 8hrs| 0hrs | 0hrs |
-| Total | H | 40hrs| 0hrs | 0hrs |
+| Total | H | 40hrs| 6hrs | 4hrs |
 
 
 ## Additional Libraries
