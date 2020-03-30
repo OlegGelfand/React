@@ -1,0 +1,9 @@
+.header {
+    position: absolute;
+    color:black;
+    position: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+.tesla {
+    color:black;
+}

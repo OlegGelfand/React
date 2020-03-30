@@ -1,0 +1,8 @@
+.form {
+    width:200px;
+    height: 100px;
+    color: rgba(90,90,90, .8)
+}
+Form {
+    border: 2px solid black;
+}

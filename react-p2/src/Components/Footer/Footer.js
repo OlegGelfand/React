@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+
 
 
 
@@ -9,6 +9,7 @@ function Footer() {
         <p>
           footer
         </p>
+        {/* <Link href="threecars">^</a> */}
     </div>
   );
 }
