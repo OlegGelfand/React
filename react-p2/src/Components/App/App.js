@@ -1,13 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import './App.css';
-import Footer from "../Footer/Footer"
-import WeatherInfo from "../WeatherInfo/WeatherInfo";
-import Form from "../Form/Form";
+import './App.css'
 import MainPage from "../MainPage/MainPage";
-import Header from '../Header/Header';
 import Modelx from '../Modelx/Modelx';
 import Modely from '../Modely/Modely';
 import { Route, Switch } from "react-router-dom";
+import MainForm from "../MainForm/MainForm"
 
 
 
@@ -31,19 +28,18 @@ function App(props) {
   }, [zipInput]);
 
 
-
   return (
-    <div className="App">
-      <Header />
-      <Form handleSubmit={handleSubmit} />
-      <WeatherInfo zipcode={zipCodeData} />
-     
-      {/* <Footer /> */}
+    <div >
+  
+  <MainForm handleSubmit={handleSubmit} zipCodeData={zipCodeData}/>
+  
      <Switch>
+        
         <Route exact={true} path="/" component={MainPage} />
         <Route exact path="/modelx" component={Modelx} />
         <Route exact path="/modely" component={Modely} />
       </Switch>
+      
   
    </div>
   );

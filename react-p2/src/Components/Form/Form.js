@@ -13,10 +13,11 @@ function Form(props) {
         setZipCode(code);
       };
   return (
-      <div class ="form">
+      <div className ="form">
       <form onSubmit={handleSubmit}>
+      <input type="submit" value="Find local Weather" />
         <input id="ZipCode" type="text" value={zipCode} onChange={handleChange} />
-        <input type="submit" value="Find local Weather" />
+        
       </form>
       </div>
     );
