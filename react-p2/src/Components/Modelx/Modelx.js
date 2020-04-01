@@ -10,19 +10,19 @@ function Modelx() {
               <Link className="nav" to="/">
                       Tesla
               </Link>
-              <a href="#" >Model S</a>
-              <a href="#" >Model 3</a>
+              <a href=" " >Model S</a>
+              <a href=" " >Model 3</a>
               
               
               <Link className="nav" to="/Modely">
                   Model Y
               </Link>
-              <a href="#" >Solar Roof</a>
-              <a href="#" >Solar Panels</a>
-              <a href="#" >Model S</a>
+              <a href=" " >Solar Roof</a>
+              <a href=" " >Solar Panels</a>
+              <a href=" " >Model S</a>
            <span>
-              <a className="nav2" href="#"> Shop </a>
-              <a className="nav2" href="#"> Sign In </a>
+              <a className="nav2" href=" "> Shop </a>
+              <a className="nav2" href=" "> Sign In </a>
            </span>
             </div>
           
