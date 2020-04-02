@@ -40,10 +40,9 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - connect components
 - Render data on page 
 - mimic links
-- add hamburger menu
+- add drop down menu
 - create responsive design (same as desktop just smaller)
 - add nav bar
-- add foot nav bar
 - links will all be disabled.
 
 #### PostMVP EXAMPLE
@@ -72,7 +71,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Add API | H | 3hrs| 1hrs | 0hrs |
 | Responsive design | H | 4hrs| 0hrs | 0hrs |
 | Nav Bar in header | H | 3hrs| 0hrs | 0hrs |
-| Nav Bar in footer | H | 3hrs| 0hrs | 0hrs |
 | power everything box will be clickable and slide L and R | H | 3hrs| 0hrs | 0hrs |
 | Add grid | H | 4hrs| 0hrs | 0hrs |
 | Add styling | H | 4hrs| 0hrs | 0hrs |
