@@ -9,7 +9,7 @@
 //     <div className="header">
 //             Tesla
 //             </div>
-//         
+//         <Nav />
 //      </header>
 //     );
 //   }

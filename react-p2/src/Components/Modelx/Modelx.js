@@ -4,7 +4,7 @@ import "./Modelx.css";
 
 function Modelx() {
   return (
-    <div>
+    <div class="background">
             
             <div className="nav">
               <Link className="nav" to="/">
@@ -25,9 +25,10 @@ function Modelx() {
               <a className="nav2" href=" "> Sign In </a>
            </span>
             </div>
-          
-            <img className="heroImage"src="https://www.tesla.com/ns_videos/homepage/homepage_energy_hero_desktop.jpg" alt="img2" />
-        
+          {/* <div className="X">
+            <img className="heroImage" id="modelx"src="https://www.tesla.com/ns_videos/homepage/homepage_energy_hero_desktop.jpg" alt="img2" />
+            </div> */}
+            
               
         
             

@@ -9,6 +9,7 @@ import MainForm from "../MainForm/MainForm"
 
 
 
+
 function App(props) {
      const [weatherData, setWeatherData] = useState({});
     // const [zipInput, setZipInput] = useState("");
@@ -38,7 +39,7 @@ function App(props) {
 console.log("Address info", addressInfo, typeof addressInfo)
     
     const makeApiCall = async () => {
-      const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${addressInfo}&appid=2131099a42792e2c63be3eb785ae1ccd`;
+      const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${addressInfo}&units=imperial&appid=2131099a42792e2c63be3eb785ae1ccd`;
       const res = await fetch(weatherUrl
       );
       let json = await res.json();
@@ -62,13 +63,12 @@ console.log("Address info", addressInfo, typeof addressInfo)
     weatherData
     }
 }> */}
+
 <MainForm weatherData={weatherData}/>
-{/* </MyProps.Provider> */}
-  
-  
+{/* <WeatherInfo /> 
+</MyProps.Provider>  */}
   
      <Switch>
-        
         <Route exact={true} path="/" component={MainPage} />
         <Route exact path="/modelx" component={Modelx} />
         <Route exact path="/modely" component={Modely} />
@@ -78,5 +78,6 @@ console.log("Address info", addressInfo, typeof addressInfo)
   );
 }
 
+
 export default App;
-// export const MyProps = createContext();
+export const MyProps =createContext();

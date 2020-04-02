@@ -13,22 +13,26 @@ img>.threecars {
   }
   #zoom{
     transition: transform .2s; 
-    width:100%;
+    width: cover;
     height: 600px;
     background-size: 100%;
+    
   }
   #zoom:hover {
     transform: scale(2); 
     transition: all 2s ease;
     background-size: 80%;
+    margin-bottom:200px;
+   
     
   }
 
-  
+
 
 .heroImage {
   width: 100%;
   margin-top: -60px;
+  object-fit: cover
   
 }
 .nav {
@@ -48,4 +52,10 @@ a {
   text-transform: uppercase;
   z-index: 10;
 }
- 
+
+
+button {
+  z-index:20px;
+  width:20px;
+}
+
