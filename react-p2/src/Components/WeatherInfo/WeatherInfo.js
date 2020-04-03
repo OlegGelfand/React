@@ -1,71 +1,33 @@
-import React, {useContext} from 'react';
-import './WeatherInfo.css'
-// import {MyProps} from '../App/App'
+import React from "react";
+import "./WeatherInfo.css";
 
-function WeatherInfo(props){  
-  // console.log("weatherinfo-props",MyProps)
+
+function WeatherInfo(props) {
   if (!props.weatherData.main) {
-    return <></>}
-    console.log("fetched", props);
-  // const myProps = useContext(MyProps);
-  // console.log("weather-MyProps", myProps.weatherData)
+    return <>"just wait a minute"</>;
+  }
 
-  //  let dataSet = props.weatherData.map(data =>{
-      
-    return ( 
-      <div className ="weather">
-       
-             <h2>Local Weather: {props.weatherData.name}</h2> 
-            <h2>Current Temperature: {props.weatherData.main.temp}</h2> 
-            {/* <h2>Weather Description: {props.weatherData.weather[0].description}</h2> */}
-            {/* <h3>{dataSet(props.main.temp)}</h3> */}
-         </div>
+  const temp = props.weatherData.main.temp;
 
-          
-   );
-  } 
-  // if(!props.recipes.hits){
-  //   return <></>}
-  //   const recipeList = props.recipes.hits.map((card, i) => {
-  //       return (
-  //       <div key={i}>
-  //       </div>
-  
-  // if (myProps !== undefined) {
-  //   console.log("hey I have stuff! ", myProps.weatherData)
-  // }
-  
+  const response = () => {
+    if (props.weatherData.name === "Detroit") {
+      return "Go Buckeyes!";
+    } else if (temp > 70) {
+      return " It's a beautiful " + temp + " degree day outside, come in, see how good you look "
+    } else if (temp > 50) {
+      return " See the sky in the Model 3 on a " + temp + " degree day ";
+    } else {
+      return " Stay warm and happy in your Model X ";
+    }
+  };
+  return (
+    <div className="weather">
+      <p>Dear friends in {props.weatherData.name}</p>
+      <p>the temperature is: {props.weatherData.main.temp} degrees</p>
+      <p>your weather: {props.weatherData.weather[0].description}</p>
+      <h3>{response()}</h3>
+    </div>
+  );
+}
 
-  // const response = (temp)=> {
-  //   if(temp > 70) {
-  //    return ("it's nice and warm " + temp + " take a drive")
-  //  } else if (temp > 50) {    return ("so it's a bit chilly " + temp + "  we've got you covered")
-  //   } else {
-  //    return ("so it's " + temp + " we have central heating")
-  //   }
-    // return (
-    //   <div>
-    //   <ul>{dataSet}</ul>
-    // </div>
-    // )
-  
- 
-    
-//  if (MyProps.WeatherData.name) {
-        
-        
-       
-      // } else {
-      //   return (
-           
-      //   <></>    
-      //   )
-   
-
-  
-
-
-
-
-;
-  export default WeatherInfo;
+export default WeatherInfo;

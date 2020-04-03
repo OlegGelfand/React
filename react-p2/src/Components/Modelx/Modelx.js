@@ -1,39 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Modelx.css";
+import "../App/App.css";
 
-function Modelx() {
+function Modelx(props) {
   return (
     <div>
-            
+      <div>
+        <div className="drop-down">
+          <button className="drop-btn">Tesla</button>
+          <div className="dropdown-content">
             <div className="nav">
-              <Link className="nav" to="/">
-                      Tesla
+              <Link className="home" to="/">
+                Tesla
               </Link>
-              <a href=" " >Model S</a>
-              <a href=" " >Model 3</a>
-              
-              
-              <Link className="nav" to="/Modely">
-                  Model Y
+              <a href=" ">Model S</a>
+              <a href=" ">Model 3</a>
+              <Link to="/Modely">
+                Model Y
               </Link>
-              <a href=" " >Solar Roof</a>
-              <a href=" " >Solar Panels</a>
-              <a href=" " >Model S</a>
-           <span>
-              <a className="nav2" href=" "> Shop </a>
-              <a className="nav2" href=" "> Sign In </a>
-           </span>
+              <a href=" ">Model S</a>
+              <span>
+                <a href=" ">
+                  {" "}
+                  Shop{" "}
+                </a>
+                <a className="nav-2" href=" ">
+                  {" "}
+                  Sign In{" "}
+                </a>
+              </span>
             </div>
-          
-            <img className="heroImage"src="https://www.tesla.com/ns_videos/homepage/homepage_energy_hero_desktop.jpg" alt="img2" />
-        
-              
-        
-            
-        
-            
+          </div>
         </div>
+      </div>
+      <img
+        className="hero-image-x"
+        src="https://www.tesla.com/sites/default/files/modelsx-new/sx-specs/MX-specs-desktop.jpg"
+        alt="img3"
+      />
+      <img
+        className="x"
+        src="https://boygeniusreport.files.wordpress.com/2017/12/tesla-model-x-black.jpg?quality=98&strip=all&w=1200"
+        alt="img3"
+      />
+    </div>
   );
 }
 
