@@ -1,4 +1,6 @@
 ## Project title
+Tesla App
+
 This is a simple rendering of tesla.com, with an additional 2 API components that combines user data with weather data to help sell cars.
 
 ## Motivation
