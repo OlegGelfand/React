@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Modely.css";
+import "./modely.css";
 
 function Modely() {
   return (
