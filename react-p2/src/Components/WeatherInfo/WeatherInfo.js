@@ -1,71 +1,33 @@
-import React, {useContext} from 'react';
-import './WeatherInfo.css'
-// import {MyProps} from '../App/App'
+import React from "react";
+import "./WeatherInfo.css";
 
-function WeatherInfo(props){  
-  // console.log("weatherinfo-props",MyProps)
-  // const myProps = useContext(MyProps);
+
+function WeatherInfo(props) {
   if (!props.weatherData.main) {
-    return <></>}
-    console.log("fetched", props);
-  
-  // console.log("weather-MyProps", myProps.weatherData)
-
-const temp = props.weatherData.main.temp
-
-    const response = ()=> {
-    if(props.weatherData.name==="Detroit"){
-      return ("Teslas aren't sold in Michigan")
-    } else if (temp > 70) {
-     return ("it's a beautiful + temp + degree day outside, buy a tesla, live life well")
-   } else if (temp > 50) {    return (" " + temp + "  we've got you covered")
-    } else {
-     return ("so it's " + temp  + " we have central heating")
-    }    
-
-
+    return <>"just wait a minute"</>;
   }
-  
 
-console.log('winfo', response )
-    return ( 
-      <div className ="weather">
-       
-             <h2>You are in: {props.weatherData.name}</h2> 
-            <h2>and the temperature is: {props.weatherData.main.temp} degrees</h2> 
-            <h2>your weather: {props.weatherData.weather[0].description}</h2>
-            <h3>{response()}</h3>
-            
-         </div>
+  const temp = props.weatherData.main.temp;
 
-          
-   );
-  } 
- 
-  // if (myProps !== undefined) {
-  //   console.log("hey I have stuff! ", myProps.weatherData)
-  // }
-  
+  const response = () => {
+    if (props.weatherData.name === "Detroit") {
+      return "Go Buckeyes!";
+    } else if (temp > 70) {
+      return " It's a beautiful " + temp + " degree day outside, come in, see how good you look "
+    } else if (temp > 50) {
+      return " See the sky in the Model 3 on a " + temp + " degree day ";
+    } else {
+      return " Stay warm and happy in your Model X ";
+    }
+  };
+  return (
+    <div className="weather">
+      <p>Dear friends in {props.weatherData.name}</p>
+      <p>the temperature is: {props.weatherData.main.temp} degrees</p>
+      <p>your weather: {props.weatherData.weather[0].description}</p>
+      <h3>{response()}</h3>
+    </div>
+  );
+}
 
-
-  
- 
-    
-//  if (MyProps.WeatherData.name) {
-        
-        
-       
-      // } else {
-      //   return (
-           
-      //   <></>    
-      //   )
-   
-
-
-
-
-
-
-;
-  export default WeatherInfo;
+export default WeatherInfo;
