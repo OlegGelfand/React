@@ -33,7 +33,7 @@ function MainPage(props) {
           </div>
         </div>
       </div>
-
+    <div className="images">
       <img
         className="hero-image"
         id="zoom"
@@ -48,14 +48,14 @@ function MainPage(props) {
         alt="img2"
       />
 
-      <div className="image-three">
-        <video controls autoPlay className="heroImage">
+      {/* <div>
+        <video controls autoPlay className="hero-video">
           <source
             src="https://www.tesla.com/ns_videos/accessories-hero-desktop.mp4"
             type="video/mp4"
           ></source>
         </video>
-      </div>
+      </div> */}
 
       <img
         className="hero-image"
@@ -63,6 +63,7 @@ function MainPage(props) {
         src="https://www.tesla.com/sites/tesla/files/curatedmedia/blue-hero-desktop.jpg"
         alt="img3"
       />
+    </div>
     </div>
   );
 }

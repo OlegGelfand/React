@@ -55,38 +55,57 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router, rout to header and footer | 
-| Header | This will render the header include the nav, which will have many links, but disabled| 
-| Footer | This will have a nav bar | 
+| App | This will make the initial data pull and include React Router, rout to Model X and Model Y | 
+| MainData | This will render the nav and main page| 
+| Footer | This will have a static nav bar | 
 |Weatherinfo | provide a weather report with jokes (see above) | 
-| Form | handles all the click events  | 
+| Model Y| page that contains data about teslas Model Y | 
+| Model X| page that contains data about teslas Model X | 
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create Components Form | H | 4hrs| 4hrs | 4hrs |
-| Render Components | H | 4hrs| 2hrs | 4hrs |
-| Add API | H | 3hrs| 1hrs | 0hrs |
-| Responsive design | H | 4hrs| 0hrs | 0hrs |
-| Nav Bar in header | H | 3hrs| 0hrs | 0hrs |
-| power everything box will be clickable and slide L and R | H | 3hrs| 0hrs | 0hrs |
-| Add grid | H | 4hrs| 0hrs | 0hrs |
-| Add styling | H | 4hrs| 0hrs | 0hrs |
-| Buffer time | H | 8hrs| 0hrs | 0hrs |
-| Total | H | 40hrs| 6hrs | 4hrs |
+| Create Components Form | H | 4hrs| 4hrs | 5hrs |
+| Render Components | H | 4hrs| 3hrs | 3hrs |
+| Add API | H | 3hrs| 5hrs | 7hrs |
+| Responsive design | H | 4hrs| 4hrs | 4hrs |
+| Nav Bar in header | H | 3hrs| 3hrs | 3hrs |
+| Add grid | H | 4hrs| 1hrs | 1hrs |
+| Add styling | H | 4hrs| 5hrs | 5hrs |
+| Buffer time | H | 8hrs| 8hrs | 8hrs |
+| Total | H | 34hrs| 34hrs | 36hrs |
 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+ I created the drop down menu from w3schools. using their code and modifying.
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+  useEffect(() => {
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+    const ipAddressUrl = `http://gd.geobytes.com/GetCityDetails`;
+    const makeIPApiCall = async () => {
+      const response = await fetch(`${proxyUrl}${ipAddressUrl}`);
+      let resText = await response.text();
+      let json = JSON.parse(resText);
+      setIPData(json);
+    };
+    makeIPApiCall();
+  }, []);
+
+  useEffect(() => {
+    const addressInfo = ipData.geobytesfqcn;
+    const makeApiCall = async () => {
+      const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${addressInfo}&units=imperial&appid=${process.env.REACT_APP_WEATHERAPPAPI}`;
+      const res = await fetch(weatherUrl);
+      let json = await res.json();
+      setWeatherData(json);
+    };
+    makeApiCall();
+  }, [ipData]);
 ```

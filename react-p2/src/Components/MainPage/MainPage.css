@@ -17,6 +17,9 @@
   background-size: 80%;
   margin-bottom: 250px;
 }
+.hero-image-two {
+  width:120%;
+}
 .hero-image {
   width: 100%;
   margin-top: -60px;
@@ -27,13 +30,13 @@
   color: white;
   display: flex;
   justify-content: space-evenly;
-  z-index: 10;
+  z-index: 30;
 }
 .nav-2 {
   color: white;
   display: flex;
   justify-content: space-evenly;
-  z-index: 10;
+  z-index: 30;
 }
 a {
   color: white;
@@ -52,5 +55,5 @@ a:hover {
 }
 div.weather {
   background-color: rgba(7, 0, 0, 0.5);
-  width: 45%;
+  width: 20%;
 }

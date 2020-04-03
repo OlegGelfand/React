@@ -1,7 +1,6 @@
 import React from "react";
 import "./WeatherInfo.css";
 
-
 function WeatherInfo(props) {
   if (!props.weatherData.main) {
     return <>"just wait a minute"</>;
@@ -13,7 +12,11 @@ function WeatherInfo(props) {
     if (props.weatherData.name === "Detroit") {
       return "Go Buckeyes!";
     } else if (temp > 70) {
-      return " It's a beautiful " + temp + " degree day outside, come in, see how good you look "
+      return (
+        " It's a beautiful " +
+        temp +
+        " degree day outside, come in, see how good you look "
+      );
     } else if (temp > 50) {
       return " See the sky in the Model 3 on a " + temp + " degree day ";
     } else {

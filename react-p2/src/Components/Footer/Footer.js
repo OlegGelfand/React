@@ -6,11 +6,11 @@ function Footer() {
     <ul className="footer">
       <li className="mobile">Tesla © 2020</li>
       <li className="mobile"> Privacy & Legal </li>
-      <li className="noMobile"> Contact </li>
-      <li className="noMobile"> Careers </li>
-      <li className="noMobile"> Get Newsletter </li>
-      <li className="noMobile"> Forums </li>
-      <li className="noMobile"> Locations </li>
+      <li className="no-mobile"> Contact </li>
+      <li className="no-mobile"> Careers </li>
+      <li className="no-mobile"> Get Newsletter </li>
+      <li className="no-mobile"> Forums </li>
+      <li className="no-mobile"> Locations </li>
     </ul>
   );
 }

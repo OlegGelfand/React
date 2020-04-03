@@ -31,7 +31,7 @@ h3:hover {
 
 div.weather {
   background-color: rgba(7, 0, 0, 0.5);
-  width: 55%;
+  width: 20%;
 }
 div.weather:-moz-loading {
   color: #842c44;

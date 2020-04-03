@@ -1,4 +1,4 @@
-@media (max-width: 320px) {
+@media (min-width: 322px) and (max-width: 768px) {
   .nav > a {
     color: white;
     display: grid;
@@ -14,17 +14,15 @@
   .nav {
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     z-index: 10;
     float: right;
     text-align: left;
     margin-right: 10%;
     border: 2px solid white;
   }
-  img.hero-image {
-    margin-top: -120px;
-  }
+
   .nav > span {
     display: none;
   }
@@ -59,26 +57,67 @@
     grid-template-columns: repeat(2, 1fr);
     align-content: center;
     position: fixed;
-    width: 56%;
-    margin: 0;
+    width: 25%;
+    margin: 40px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 14;
   }
-  .weather.p {
-    border: 2px solid white;
-    width: 20%;
+  #zoom {
+    margin-top: -200px;
   }
-  .no-mobile {
+  .drop-btn {
+    transition: all 2s ease;
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    z-index: 23;
+    border-radius: 20%;
+    border: 2px solid black;
+  }
+
+  .drop-down {
+    position: relative;
+    display: inline-block;
+    z-index: 40;
+  }
+
+  .drop-down-content {
     display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 120px;
+    box-shadow: 0px px 16px 0px rgba(0, 0, 0, 0.2);
   }
-  li.mobile {
-    display: flex;
-    flex-direction: column;
+  .drop-down-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    align-content: left;
+    text-align: left;
+    justify-content: left;
+  }
+
+  .drop-down-content a:hover {
+    background-color: black;
+    color: rgba(0, 0, 0, 0.2);
+    transition: all 2s ease;
+  }
+
+  .drop-down:hover .drop-down-content {
+    display: block;
+  }
+
+  .drop-down:hover .drop-btn {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 2s ease;
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 321px) {
   .nav > a {
     color: white;
     display: grid;
@@ -101,10 +140,6 @@
     text-align: left;
     margin-right: 10%;
     border: 2px solid white;
-  }
-  img.hero-image {
-    margin-top: -120px;
-    width: 100%;
   }
   .nav > span {
     display: none;
@@ -139,10 +174,12 @@
   }
   div.weather {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, fr);
+    padding-left: 20px;
+    padding-right: 20px;
     align-content: center;
     position: fixed;
-    width: 56%;
+    width: 25%;
     margin-top: 80px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.5);
@@ -152,13 +189,7 @@
     border: 2px solid white;
     width: 20%;
   }
-  .no-mobile {
-    display: none;
-  }
-  li.mobile {
-    display: flex;
-    flex-direction: column;
-  }
+
   .drop-btn {
     transition: all 2s ease;
     background-color: white;
@@ -174,18 +205,17 @@
   .drop-down {
     position: relative;
     display: inline-block;
-    z-index: 23;
-    float: left;
+    z-index: 40;
   }
 
-  .dropdown-content {
+  .drop-down-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     width: 120px;
     box-shadow: 0px px 16px 0px rgba(0, 0, 0, 0.2);
   }
-  .dropdown-content a {
+  .drop-down-content a {
     color: black;
     padding: 12px;
     text-decoration: none;
@@ -195,25 +225,25 @@
     justify-content: left;
   }
 
-  .dropdown-content a:hover {
+  .drop-down-content a:hover {
     background-color: black;
     color: rgba(0, 0, 0, 0.2);
     transition: all 2s ease;
   }
 
-  .dropdown:hover .dropdown-content {
+  .drop-down:hover .drop-down-content {
     display: block;
   }
 
-  .dropdown:hover .dropbtn {
+  .drop-down:hover .drop-btn {
     background-color: black;
     color: rgba(255, 255, 255, 0.5);
     transition: all 2s ease;
   }
-  #hero-image-one {
+  .hero-image {
     height: 300px;
   }
-  #hero-image-two {
-    height: 300px;
+  li.no-mobile {
+    display: none;
   }
 }

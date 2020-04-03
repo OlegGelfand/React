@@ -6,9 +6,9 @@ function Modely() {
   return (
     <div>
       <div>
-        <div className="dropdown">
-          <button className="dropbtn">Tesla</button>
-          <div className="dropdown-content">
+        <div className="drop-down">
+          <button className="drop-btn">Tesla</button>
+          <div className="drop-down-content">
           <div className="nav">
             <Link className="home" to="/">
               Tesla
